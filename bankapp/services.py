@@ -44,7 +44,7 @@ def withdraw_amount():
                 return json.dumps('Customer Existing balance {}, current Balance {}'.format(existing, custacc.balance))
         return json.dumps({"status": "Customer--Account--Bank details not matching..!"})
 
-    return json.dumps({"status": "Service is down for the time being.!"})
+    return json.dumps({"status": "Service is down for the time being.!"})  
 
 if __name__ == '__main__':
     app.run(debug=True)
